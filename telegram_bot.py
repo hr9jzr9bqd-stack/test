@@ -9,7 +9,7 @@ import uvicorn
 
 # ====================== НАСТРОЙКИ ======================
 API_ID = 36750422
-API_HASH = 09297d335eca0dad59213baa9225f364
+API_HASH = 0o9297d335eca0dad59213baa9225f364
 
 SESSION_STRING = os.getenv("TELEGRAM_SESSION_STRING")  
 WEBHOOK_URL    = os.getenv("WEBHOOK_URL")               
@@ -96,3 +96,4 @@ async def incoming_handler(event):
 # ====================== ЗАПУСК ======================
 if __name__ == "__main__":
     uvicorn.run("telegram_bot:app", host="0.0.0.0", port=BOT_PORT)
+
